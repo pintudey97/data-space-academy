@@ -1,0 +1,41 @@
+$black:#000;
+$white:#fff;
+$primary:#0d6efd;
+$secondary:#020E4A;
+
+$lato: 'Lato', sans-serif;
+$inter: 'Inter', sans-serif;
+
+
+//Responsive Breakpoints
+@mixin devices ($breakpoint) {
+    @if $breakpoint == xs {    
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    @media only screen and (max-width: 1399px) {
+      @content;
+    }
+  }
+}
