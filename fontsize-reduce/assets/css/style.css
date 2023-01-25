@@ -1,6 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@300;400;700;900&display=swap");
 body {
   background-color: #f9fbfe;
+  padding-top: 134px;
+}
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 113px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+@media only screen and (max-width: 991px) {
+  .sticky-header {
+    position: relative;
+  }
 }
 
 .top-header {
@@ -86,6 +111,11 @@ body {
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.23);
   }
 }
+@media only screen and (max-width: 767px) {
+  .navbar-bg .navbar-collapse {
+    top: 51px;
+  }
+}
 .navbar-bg .nav-link-btn {
   font-size: 18px;
   background-color: #0d6efd;
@@ -100,6 +130,9 @@ body {
   .navbar-bg .nav-link-btn {
     margin-left: 10px !important;
   }
+}
+.navbar-bg .nav-link-btn img {
+  margin-right: 15px;
 }
 .navbar-bg .nav-link {
   color: #1c1c1c;
@@ -456,7 +489,7 @@ body {
 }
 .hero-box h1 {
   color: #1c1c1c;
-  font-size: 60px;
+  font-size: 30px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-bottom: 18px;
@@ -473,7 +506,7 @@ body {
 }
 .hero-box p {
   color: #1c1c1c;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   margin-bottom: 0px;
@@ -486,7 +519,7 @@ body {
 
 .heading1 {
   color: #121212;
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-top: 80px;
@@ -555,7 +588,7 @@ body {
 .rp-box .rp-name {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: #1c1c1c;
   margin: 16px 0px;
 }
@@ -567,7 +600,7 @@ body {
 .rp-box .rp-placed {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #cbcbcb;
   margin-bottom: 0px;
 }
@@ -580,7 +613,7 @@ body {
   color: #0d6efd;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 1199px) {
@@ -592,7 +625,7 @@ body {
   color: #1c1c1c;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
 }
 @media only screen and (max-width: 1199px) {
   .rp-box .rp-company {
@@ -664,7 +697,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-left .topic {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   color: #fff;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -683,7 +716,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-left .topic-name {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 47px;
+  font-size: 36px;
   color: #FFB701;
   margin-bottom: 0px;
 }
@@ -702,7 +735,7 @@ body {
 }
 .upcoming-webinars-section .uw-box .uw-left .date-time {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 25px;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   margin-bottom: 0px;
@@ -732,7 +765,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-left .topic-author {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 61px;
+  font-size: 36px;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -781,7 +814,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-right .topic-title {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
 }
 @media only screen and (max-width: 1199px) {
   .upcoming-webinars-section .uw-box .uw-right .topic-title {
@@ -796,7 +829,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-right .topic-txt {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 15px;
 }
 @media only screen and (max-width: 1199px) {
@@ -813,7 +846,7 @@ body {
 .upcoming-webinars-section .uw-box .uw-right .topic-instructor {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 25px;
 }
 @media only screen and (max-width: 1199px) {
@@ -839,7 +872,7 @@ body {
   color: #000;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   background-repeat: no-repeat;
   background-position: center left 15px;
 }
@@ -875,7 +908,7 @@ body {
   padding: 0px 15px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   transition: 3s;
 }
 @media only screen and (max-width: 1199px) {
@@ -900,7 +933,7 @@ body {
   border-radius: 5px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 18px;
   cursor: pointer;
   transition: 3s;
   padding: 10px 15px;
@@ -927,7 +960,7 @@ body {
 }
 .student-reviews .nav-tabs .nav-link {
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: #121212;
   font-weight: 400;
   border: none;
@@ -998,7 +1031,7 @@ body {
 .sr-box .sr-name {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: #121212;
   margin-bottom: 0px;
 }
@@ -1010,7 +1043,7 @@ body {
 .sr-box .sr-deg {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #121212;
   margin-bottom: 16px;
 }
@@ -1033,7 +1066,7 @@ body {
 .sr-box .sr-text {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
   margin-bottom: 0;
 }
@@ -1063,7 +1096,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 22px;
   min-height: 81px;
 }
@@ -1083,7 +1116,7 @@ body {
   color: #b9b9b9;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -1111,7 +1144,7 @@ body {
   color: #0d6efd;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -1135,7 +1168,7 @@ body {
   color: #2BBB10;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0px;
   display: flex;
   align-items: center;
@@ -1188,7 +1221,7 @@ footer h5 {
   margin-top: 39px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 16px;
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 1199px) {
@@ -1200,7 +1233,7 @@ footer p {
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
 @media only screen and (max-width: 1199px) {
   footer p {
@@ -1215,7 +1248,7 @@ footer .footer-bottom .f-link {
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
 @media only screen and (max-width: 1199px) {
   footer .footer-bottom .f-link {
@@ -1226,7 +1259,7 @@ footer .footer-bottom .f-link a {
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
 }
 @media only screen and (max-width: 1199px) {
@@ -1241,7 +1274,7 @@ footer .footer-bottom .copyright-text {
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 1199px) {

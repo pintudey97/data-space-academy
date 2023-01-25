@@ -1,6 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@300;400;700;900&display=swap");
 body {
   background-color: #f9fbfe;
+  padding-top: 134px;
+}
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 113px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+@media only screen and (max-width: 991px) {
+  .sticky-header {
+    position: relative;
+  }
 }
 
 .top-header {
@@ -86,6 +111,11 @@ body {
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.23);
   }
 }
+@media only screen and (max-width: 767px) {
+  .navbar-bg .navbar-collapse {
+    top: 51px;
+  }
+}
 .navbar-bg .nav-link-btn {
   font-size: 18px;
   background-color: #0d6efd;
@@ -100,6 +130,9 @@ body {
   .navbar-bg .nav-link-btn {
     margin-left: 10px !important;
   }
+}
+.navbar-bg .nav-link-btn img {
+  margin-right: 15px;
 }
 .navbar-bg .nav-link {
   color: #1c1c1c;

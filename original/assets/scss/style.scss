@@ -3,6 +3,24 @@
 
 body{
     background-color: darken(saturate(adjust-hue($white, 216), 71.43), 1.37);
+    padding-top: 134px;
+    @include devices(lg) {
+        padding-top: 113px;
+    }
+    @include devices(md) {
+        padding-top: 0px;
+    }
+}
+.sticky-header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 3px 6px #00000029;
+    @include devices(md) {
+        position: relative;
+    }
 }
 .top-header{
     width: 100%;
@@ -80,6 +98,9 @@ body{
             z-index: 10;
             box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 23%);
         }
+        @include devices(sm) {
+            top: 51px;
+        }
     }
     .nav-link-btn{
         font-size: 18px;
@@ -92,6 +113,9 @@ body{
         margin-left: 25px !important;
         @include devices(md) {
             margin-left: 10px !important;
+        }
+        img{
+            margin-right: 15px;
         }
     }
     .nav-link{

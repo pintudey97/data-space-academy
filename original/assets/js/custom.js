@@ -81,3 +81,4 @@ $('.related-courses-carousel').owlCarousel({
         }
     }
 });
+  
